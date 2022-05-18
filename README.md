@@ -6,7 +6,7 @@
 export ALLOW_MISSING_DEPENDENCIES=true
 . build/envsetup.sh
 lunch twrp_p3s-eng
-make recoveryimage
+make recoveryimage -j$(nproc)
 ```
 
 Kernel source:
